@@ -154,6 +154,6 @@ public class VenueServiceTest {
         venueService.getVenueInfo(venueRequest.getId());
 
         verify(venueMapper, times(1)).getVenueInfo(venueRequest.getId());
-        verify(venueHallService, times(100)).getVenueHalls(venueRequest.getId());
+        verify(venueHallService, times(1)).getVenueHalls(venueRequest.getId());
     }
 }
