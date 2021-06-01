@@ -1,4 +1,4 @@
-package com.show.showticketingservice;
+package com.show.showticketingservice.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

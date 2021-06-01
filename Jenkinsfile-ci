@@ -32,15 +32,6 @@ pipeline {
             }
         }
 
-        stage('Integration Test') {
-             steps {
-                 script {
-                     sh 'mvn clean verify -Dsurefire.skip=true';
-                     junit allowEmptyResults: true, testResults: '**/target/failsafe-reports/TEST-*.xml'
-                }
-             }
-        }
-
    }
 
 }
